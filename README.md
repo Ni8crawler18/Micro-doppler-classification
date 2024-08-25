@@ -7,6 +7,9 @@ The project implements a Support Vector Machine (SVM) classifier to differentiat
 ## Features
 
 -SVM Classification: Linear SVC classifier trained on grayscale spectrograms.
+
 -Image Processing: Conversion to grayscale and normalization of input images.
+
 -User Interface: A Tkinter-based GUI for easy interaction and real-time classification.
+
 -GitHub Pages Deployment: The Tkinter UI is available via GitHub Pages.
