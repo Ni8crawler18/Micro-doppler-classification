@@ -1,0 +1,12 @@
+{
+  "name": "micro-doppler-classification",
+  "version": "1.0.0",
+  "description": "A simple UI for micro-doppler classification using SVM.",
+  "scripts": {
+    "deploy": "gh-pages -d ui"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "homepage": "https://ni8crawler18.github.io/Micro-doppler-classification"
+}
