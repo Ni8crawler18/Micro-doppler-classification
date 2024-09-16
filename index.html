@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Micro-Doppler Signature Classification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .upload-container {
+            background: #f8f8f8;
+            border-radius: 8px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .file-upload-container {
+            width: 100%;
+            max-width: 300px;
+            height: 60px;
+            border: 2px dashed #cccccc;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .file-upload-container:hover {
+            border-color: #666666;
+        }
+
+        .file-upload-text {
+            font-size: 1rem;
+            color: #666666;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            margin-top: auto;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .upload-container {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Micro-Doppler Signature Classification</h1>
+            <p>Distinguish between birds and drones using our SVM-based model. Upload your radar data for instant classification.</p>
+        </header>
+
+        <main class="upload-container">
+            <h2>Upload Signature</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="fileUpload" class="file-upload-container">
+                    <span class="file-upload-text">Choose a file or drag it here</span>
+                    <input type="file" id="fileUpload" name="fileUpload" accept=".png, .jpg, .jpeg" required>
+                </label>
+                <button type="submit" class="btn-primary">Classify</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>98% Classification Accuracy | © 2024 Team Nocturnals</p>
+        </footer>
+    </div>
+</body>
+</html>
